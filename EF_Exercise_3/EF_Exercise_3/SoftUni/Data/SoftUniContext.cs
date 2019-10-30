@@ -25,7 +25,7 @@
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=HP_NASKO\\SQLEXPRESS;Database=SoftUni;Integrated Security=True;");
+                optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=SoftUni;Integrated Security=True;");
             }
         }
 
