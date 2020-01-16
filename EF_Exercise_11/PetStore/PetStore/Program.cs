@@ -10,11 +10,11 @@
         {
             using var data = new PetStoreDbContext();
 
-            var brandService = new BrandService(data);
-            
+            //var brandService = new BrandService(data);
+            //var brandWithToys = brandService.FindByIdWithToys(1);
+            //Console.WriteLine(brandWithToys.Name);
 
-            var brandWithToys = brandService.FindByIdWithToys(1);
-            Console.WriteLine(brandWithToys.Name);
+
         }
     }
 }
