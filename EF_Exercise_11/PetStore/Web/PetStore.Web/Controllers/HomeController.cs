@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using PetStore.Web.Models;
-
-namespace PetStore.Web.Controllers
+﻿namespace PetStore.Web.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Logging;
+
+    using Models;
+
+    using System.Diagnostics;
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -20,6 +17,20 @@ namespace PetStore.Web.Controllers
 
         public IActionResult Index()
         {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            ViewData["Message"] = "Your contact page.";
+
             return View();
         }
 
